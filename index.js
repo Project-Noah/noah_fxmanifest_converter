@@ -13,19 +13,6 @@ const changer = new Changer();
 
 /* Main */
 logInfo('Copying resources. This may take a while to finish');
-changer.loadResource('./converted_resource', () => {
-    logInfo('Resource Loaded. Converting to fxmanifest');
-
-    changer.convert((success) => {
-        if(success) { 
-            logInfo('Successfully converted from __resource to fxmanifest!');
-        } else {
-            logError('Failed to convert from __resource to fxmanifest!');
-        }
-    })
-})
-
-/*
 cpr('./resources', './converted_resource', {
     deleteFirst : true,
     overwrite   : true,
@@ -37,6 +24,14 @@ cpr('./resources', './converted_resource', {
 
     logInfo('Loading scripts');
     changer.loadResource('./converted_resource', () => {
+        logInfo('Resource Loaded. Converting to fxmanifest');
 
+        changer.convert((success) => {
+            if(success) { 
+                logInfo('Successfully converted from __resource to fxmanifest!');
+            } else {
+                logError('Failed to convert from __resource to fxmanifest!');
+            }
+        })
     })
-});*/
+});
