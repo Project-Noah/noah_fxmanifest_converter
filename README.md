@@ -10,6 +10,11 @@ Convert all your __resource.lua to fxmanifest.lua, to support a new compatibilit
 
 I don't know it will work for everyone or not. This is just an experiment. Please report issues you're having, Pull Request is welcome!
 
+# Copyright
+This code is licenced under GNU GENERAL PUBLIC LICENSE v3.0
+
+I don't allow to sell this script or pretended as yours even this script is not working. Don't be a Thai kid that copy all other server ideas or design, Selling free script, etc.
+
 # Credit
 Credit for some logic/code style is in an code files. There is some list for it.
 
