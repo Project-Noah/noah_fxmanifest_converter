@@ -8,7 +8,7 @@ const Changer = require('./Changer.js');
 /* Helper */
 const { logInfo, logWarn, logError } = require('./helpers/logger');
 
-/* Start*/
+/* Start */
 const changer = new Changer();
 
 /* Main */
