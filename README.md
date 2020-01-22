@@ -1,12 +1,18 @@
 # noah_fxmanifest_converter
 Convert all your __resource.lua to fxmanifest.lua, to support a new compatibility
 
-# Usage
-1. Clone this repository
-2. Make sure [node.js](https://nodejs.org/en/) is installed
-3. Do an `npm install`
-4. Place all your resources in the `resources` directory
-5. Run `node index.js`
+# Usage - Executables
+1. Backup all your resources.
+2. Download the latest [releases](https://github.com/Holfz/noah_fxmanifest_converter/releases/) zip and extract it.
+3. Place all your resources in the `resources` directory.
+4. Run the executable.
+
+# Usage - Non Executables
+1. Clone this repository.
+2. Make sure [node.js](https://nodejs.org/en/) is installed.
+3. Do an `npm install`.
+4. Place all your resources in the `resources` directory.
+5. Run `node index.js`.
 
 I don't know it will work for everyone or not. This is just an experiment. Please report issues you're having, Pull Request is welcome!
 
