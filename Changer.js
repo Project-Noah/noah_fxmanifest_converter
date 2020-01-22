@@ -23,7 +23,7 @@ class Changer {
         });
     }
 
-    convert(cb = null) {
+    convert(game_type, cb = null) {
         let directories = this.directories;
 
         if(!directories) {
@@ -38,7 +38,7 @@ class Changer {
                 }
 
                 let dataArray = data.split('\n');
-                const searchKeyword = 'resource_manifest_version ';
+                const searchKeyword = 'resource_manifest_version';
                 let lastIndex = -1;
 
                 for (let index=0; index<dataArray.length; index++) {
@@ -48,7 +48,7 @@ class Changer {
                     }
                 }
 
-                dataArray[lastIndex] = "fx_version 'adamant'\ngame 'gta5'";
+                dataArray[lastIndex] = "fx_version 'adamant'\ngame " + game_type;
                 const updatedData = dataArray.join('\n');
                 fs.writeFile(directory, updatedData, (err) => {
                     if (err) {
