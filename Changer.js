@@ -48,7 +48,9 @@ class Changer {
                     }
                 }
 
-                dataArray[lastIndex] = "fx_version 'adamant'\ngame " + game_type;
+                dataArray.splice(lastIndex, 1);
+                dataArray[0] = "fx_version 'adamant'\ngame " + game_type;
+                
                 const updatedData = dataArray.join('\n');
                 fs.writeFile(directory, updatedData, (err) => {
                     if (err) {
