@@ -25,6 +25,7 @@ const questions = [
         choices: [
             { title: 'adamant', value: "adamant" },
             { title: 'bodacious', value: "bodacious" },
+            { title: 'cerulean', value: "cerulean" },
         ],
         initial: 0
     },
